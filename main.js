@@ -5,7 +5,7 @@ const OutputBox=document.querySelector("#Output-Box");
 
 checkbutton.addEventListener("click",function CheckIfTriangel(){
     for(let i=0;i<3;i++)
-    if(InputAngels[i].value===""||Number(InputAngels[i].value)==="0")
+    if(InputAngels[i].value===""||Number(InputAngels[i].value)===0)
     {
         OutputBox.innerText="Please enter all the fields or one of them is zero";
         return;
